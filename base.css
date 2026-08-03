@@ -53,13 +53,22 @@
 
     .site-header {
       position: fixed; z-index: 1000; inset: 0 0 auto; height: var(--header);
-      border-bottom: 1px solid transparent; transition: background .3s, border-color .3s, backdrop-filter .3s;
+      background: rgba(11,13,14,.88);
+      border-bottom: 1px solid rgba(242,238,228,.12);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      transition: background .3s, border-color .3s, backdrop-filter .3s;
     }
-    .site-header.scrolled { background: rgba(11,13,14,.86); border-color: var(--line); backdrop-filter: blur(18px); }
+    .site-header.scrolled {
+      background: rgba(11,13,14,.96);
+      border-color: rgba(242,238,228,.18);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+    }
     .nav-wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
     .brand-crest { width: 52px; height: 62px; object-fit: contain; filter: drop-shadow(0 6px 16px rgba(0,0,0,.28)); }
-    .logo-art { display:block; background-repeat:no-repeat; background-position:center; background-size:contain; }
+    .logo-art { display:block;  background-repeat:no-repeat; background-position:center; background-size:contain; }
     .brand-copy { line-height: 1.05; }
     .brand-copy strong { display: block; font-size: .86rem; text-transform: uppercase; letter-spacing: .11em; white-space: nowrap; }
     .brand-copy span { display: block; color: var(--copper-2); font-size: .69rem; letter-spacing: .16em; text-transform: uppercase; margin-top: 6px; }
@@ -96,7 +105,7 @@
       background-size: 72px 72px; mask-image: linear-gradient(to right, #000, transparent 78%);
     }
     .hero::after { content:""; position:absolute; z-index:-1; width:680px; height:680px; border:1px solid rgba(201,148,77,.19); border-radius:50%; right:-260px; top:12%; box-shadow: 0 0 0 85px rgba(201,148,77,.025), 0 0 0 170px rgba(201,148,77,.018); }
-    .hero-inner { padding: calc(var(--header) + 72px) 0 80px; width: 100%; }
+    .hero-inner { padding: calc(var(--header) + 28px) 0 64px; width: 100%; }
     .hero-grid { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(240px,.6fr); gap:60px; align-items:end; }
     .hero-title { font-size: clamp(4.2rem, 10.5vw, 10.8rem); max-width: 1000px; margin: 24px 0 26px; }
     .hero-title .accent { color: var(--copper-2); }
