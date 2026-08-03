@@ -29,7 +29,7 @@
       .brand-copy span { font-size:.59rem; }
       .brand-crest { width:43px; height:52px; }
       .hero { min-height:760px; background-position:62% center; }
-      .hero-inner { padding-bottom:54px; }
+      .hero-inner { padding:calc(var(--header) + 18px) 0 48px; }
       .hero-title { font-size:clamp(3.7rem,20vw,6.3rem); margin-top:18px; }
       .hero-copy { font-size:1rem; max-width:92%; }
       .hero-actions { align-items:stretch; flex-direction:column; max-width:340px; }
