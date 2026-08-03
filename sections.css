@@ -37,7 +37,7 @@
     .legacy-crest-wrap::before, .legacy-crest-wrap::after { content:""; position:absolute; border:1px solid rgba(201,148,77,.2); border-radius:50%; }
     .legacy-crest-wrap::before { width:440px; height:440px; }
     .legacy-crest-wrap::after { width:340px; height:340px; }
-    .legacy-crest { width:280px; position:relative; z-index:2; filter:drop-shadow(0 28px 35px rgba(0,0,0,.4)); }
+    .legacy-crest { width:280px; height:330px; position:relative; z-index:2; filter:drop-shadow(0 28px 35px rgba(0,0,0,.4)); }
     .legacy-title { font-size:clamp(3rem,6.5vw,6.6rem); margin:24px 0 30px; }
     .legacy-copy { max-width:680px; color:#b6b9b5; font-size:1.08rem; }
     .legacy-meta { display:grid; grid-template-columns:repeat(2,1fr); gap:26px; margin-top:42px; }
